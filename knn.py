@@ -8,12 +8,14 @@ Label = bool
 
 
 def distance(u: Sequence[float], v: Sequence[float]) -> float:
-    x1 = u[0]
-    y1 = u[1]
 
-    x2 = v[0]
-    y2 = v[1]
+    # point 1
+    x1, y1 = u[0], u[1]
 
+    # point 2
+    x2, y2 = v[0], v[1]
+
+    # euclidean distance
     dist = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
 
     return dist
